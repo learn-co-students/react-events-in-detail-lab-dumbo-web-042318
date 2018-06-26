@@ -3,10 +3,10 @@ import React from 'react'
 class DelayedButton extends React.Component {
 
   onHandleClick = (e) => {
-    e.persist()
+    e.persist() // persist event
     setTimeout(() => {
-      this.props.onDelayedClick(e)
-    }, this.props.delay)
+      this.props.onDelayedClick(e) // callback function
+    }, this.props.delay)  // represents number/time it is setTimeout to
   }
 
 
